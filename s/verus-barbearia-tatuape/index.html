@@ -3,98 +3,186 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Verus Barbearia | Tatuapé, São Paulo</title>
+<title>Verus Barbearia | Tatuapé</title>
 <meta name="description" content="Verus Barbearia em Tatuapé, São Paulo — Salão / Barbearia / Estética. Atendimento rápido pelo WhatsApp.">
-<meta name="robots" content="noindex, nofollow">
+<!--DEMO--><meta name="robots" content="noindex, nofollow"><!--/DEMO-->
 <meta property="og:title" content="Verus Barbearia">
 <meta property="og:description" content="Verus Barbearia em Tatuapé, São Paulo — Salão / Barbearia / Estética. Atendimento rápido pelo WhatsApp.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&amp;q=70">
+<meta property="og:image" content="img/1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "address": "R. Platina, 266 - Vila Azevedo, S\u00e3o Paulo - SP, 03308-010", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.9, "reviewCount": 99}, "name": "Verus Barbearia", "telephone": "(11) 98425-3611"}</script>
 <style>
   :root { --p: #9d174d; --a: #f472b6; --d: #1f1720; --l: #fdf2f8; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
   body { font-family: Poppins, system-ui, sans-serif; color: var(--d); background: #fff; line-height: 1.6; }
   a { color: inherit; }
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-  .demo { background: #111; color: #fff; font-size: 14px; text-align: center; padding: 10px 16px; position: sticky; top: 0; z-index: 50; }
-  .demo a { background: var(--a); color: #111; padding: 4px 12px; border-radius: 99px; text-decoration: none; font-weight: 600; margin-left: 8px; white-space: nowrap; }
-  header { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
-  .logo { font-weight: 800; font-size: 22px; color: var(--p); }
-  nav a { margin-left: 22px; text-decoration: none; font-weight: 600; font-size: 15px; }
-  .hero { position: relative; min-height: 78vh; display: flex; align-items: center; color: #fff;
-          background: linear-gradient(110deg, rgba(0,0,0,.78), rgba(0,0,0,.25)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&amp;q=70') center/cover; }
-  .hero h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.1; max-width: 720px; }
-  .hero p { font-size: 19px; max-width: 600px; margin: 18px 0 30px; opacity: .92; }
-  .badge { display: inline-block; background: rgba(255,255,255,.15); padding: 6px 14px; border-radius: 99px; font-size: 14px; margin-bottom: 18px; }
-  .btn { display: inline-flex; gap: 10px; align-items: center; background: var(--p); color: #fff; padding: 16px 28px;
-         border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 17px; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  .demo { background: #111; color: #fff; font-size: 14px; text-align: center; padding: 10px 16px; position: sticky; top: 0; z-index: 60; }
+  .demo a { background: var(--a); color: #111; padding: 5px 14px; border-radius: 99px; text-decoration: none; font-weight: 600; margin-left: 8px; white-space: nowrap; display: inline-block; }
+  header { position: absolute; left: 0; right: 0; z-index: 20; }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; padding-top: 18px; padding-bottom: 18px; }
+  .logo { font-weight: 800; font-size: 21px; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.4); }
+  nav a { margin-left: 22px; text-decoration: none; font-weight: 500; font-size: 15px; color: #fff; }
+  .hero { position: relative; min-height: 88vh; display: flex; align-items: center; color: #fff; padding: 110px 0 70px;
+          background: linear-gradient(115deg, rgba(0,0,0,.82), rgba(0,0,0,.35)), url('img/1.jpg') center/cover; }
+  .hero h1 { font-size: clamp(34px, 6vw, 62px); line-height: 1.08; max-width: 760px; }
+  .hero p { font-size: 19px; max-width: 620px; margin: 18px 0 30px; opacity: .93; }
+  .badge { display: inline-flex; gap: 8px; align-items: center; background: rgba(255,255,255,.15); backdrop-filter: blur(6px); padding: 7px 16px; border-radius: 99px; font-size: 15px; margin-bottom: 18px; }
+  .stars { color: #fbbf24; letter-spacing: 1px; }
+  .btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn { display: inline-flex; gap: 10px; align-items: center; background: var(--p); color: #fff; padding: 15px 26px; border-radius: 12px;
+         text-decoration: none; font-weight: 600; font-size: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.22); border: 0; cursor: pointer; }
+  .btn.wa { background: #25d366; } .btn.ghost { background: rgba(255,255,255,.14); box-shadow: none; border: 1px solid rgba(255,255,255,.4); }
   .btn.alt { background: #fff; color: var(--d); }
-  section { padding: 80px 0; }
-  h2 { font-size: clamp(26px, 4vw, 38px); margin-bottom: 14px; }
-  .lead { color: #555; max-width: 640px; margin-bottom: 40px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+  section { padding: 84px 0; }
+  .eyebrow { color: var(--p); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; font-size: 13px; }
+  h2 { font-size: clamp(26px, 4vw, 40px); line-height: 1.2; margin: 6px 0 14px; }
+  .lead { color: #555; max-width: 660px; margin-bottom: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
   .card { background: var(--l); border-radius: 18px; padding: 28px; border-top: 5px solid var(--p); }
-  .card h3 { margin-bottom: 8px; }
+  .card h3 { margin-bottom: 8px; font-size: 19px; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .gallery img { width: 100%; height: 240px; object-fit: cover; border-radius: 14px; }
+  .reviews { background: var(--d); color: #fff; }
+  .reviews .lead { color: #cbd5e1; }
+  .rcard { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+  .rcard p { font-size: 15px; color: #e5e7eb; }
+  .rcard .who { display: flex; justify-content: space-between; font-size: 14px; color: #94a3b8; margin-top: auto; }
+  .score { display: flex; gap: 22px; align-items: center; margin-bottom: 34px; flex-wrap: wrap; }
+  .score b { font-size: 54px; line-height: 1; }
   .about { background: var(--l); }
-  .about .grid { align-items: center; }
-  .stat { font-size: 46px; font-weight: 800; color: var(--p); }
+  .two { display: grid; grid-template-columns: 1.2fr 1fr; gap: 44px; align-items: center; }
+  .two img { border-radius: 20px; height: 380px; width: 100%; object-fit: cover; }
+  .hours { width: 100%; border-collapse: collapse; }
+  .hours td { padding: 10px 0; border-bottom: 1px solid #e5e7eb; }
+  .hours td:last-child { text-align: right; font-weight: 600; }
+  .hours tr.today td { color: var(--p); }
   .faq details { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 18px 22px; margin-bottom: 12px; }
   .faq summary { font-weight: 600; cursor: pointer; }
-  .map iframe { width: 100%; height: 360px; border: 0; border-radius: 18px; }
+  .contact iframe { width: 100%; height: 380px; border: 0; border-radius: 18px; }
+  .contact .line { margin: 10px 0; display: flex; gap: 10px; }
   .cta { background: var(--p); color: #fff; text-align: center; }
   .cta p { opacity: .9; margin: 10px 0 28px; }
-  footer { background: var(--d); color: #ccc; padding: 30px 0; font-size: 14px; }
+  .owner { background: #fffbeb; border-top: 4px solid #f59e0b; }
+  .owner form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
+  .owner label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500; }
+  .owner input, .owner textarea { font: inherit; padding: 12px 14px; border: 1px solid #d1d5db; border-radius: 10px; background: #fff; }
+  .owner .full { grid-column: 1 / -1; }
+  footer { background: var(--d); color: #cbd5e1; padding: 34px 0 100px; font-size: 14px; }
   .wa-float { position: fixed; right: 20px; bottom: 20px; width: 62px; height: 62px; border-radius: 50%; background: #25d366;
               display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.3); z-index: 40; }
-  @media (max-width: 640px) { nav { display: none; } section { padding: 56px 0; } }
+  .bar { display: none; }
+  @media (max-width: 760px) {
+    nav { display: none; } section { padding: 60px 0; } .two { grid-template-columns: 1fr; } .two img { height: 260px; }
+    .owner form { grid-template-columns: 1fr; } .wa-float { display: none; }
+    .bar { display: grid; grid-template-columns: repeat(3, 1fr); position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+           background: #fff; box-shadow: 0 -4px 20px rgba(0,0,0,.12); }
+    .bar a { text-align: center; padding: 12px 4px; font-size: 13px; font-weight: 600; text-decoration: none; color: var(--d); }
+    .bar a span { display: block; font-size: 20px; }
+    .bar a.wa { background: #25d366; color: #fff; }
+  }
 </style>
 </head>
 <body>
 <!--DEMO-->
 <div class="demo">✨ Site de demonstração criado para <b>Verus Barbearia</b> por Yago Santos Digital.
-  <a href="https://yago-silva-ads.github.io/leadforge/p/verus-barbearia-tatuape">Quero este site</a></div>
+  <a href="https://yago-silva-ads.github.io/leadforge/p/verus-barbearia-tatuape">Quero este site</a> <a href="#seus-dados" style="background:#fff">Sou o dono: completar dados</a></div>
 <!--/DEMO-->
 
-<div class="wrap"><header>
+<header><div class="wrap">
   <div class="logo">Verus Barbearia</div>
-  <nav><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
-</header></div>
+  <nav><a href="#servicos">Serviços</a><a href="#avaliacoes">Avaliações</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+</div></header>
 
 <div class="hero"><div class="wrap">
-  <span class="badge">⭐ 4.9 no Google · 99 avaliações</span>
+  <span class="badge"><span class="stars">★★★★★</span> 4.9 no Google · 99 avaliações</span>
   <h1>Sua melhor versão começa aqui</h1>
   <p>Verus Barbearia: atendimento de confiança em Tatuapé, São Paulo com nota 4.9 no Google. Fale com a gente agora mesmo.</p>
-  <a class="btn" href="https://wa.me/5511984253611?text=Ol%C3%A1%2C%20Verus%20Barbearia%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">💬 Agendar horário</a>
-  
+  <div class="btns">
+    <a class="btn wa" href="https://wa.me/5511984253611?text=Ol%C3%A1%2C%20Verus%20Barbearia%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">💬 Agendar horário</a>
+    
+    <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Verus%20Barbearia%2C%20R.%20Platina%2C%20266%20-%20Vila%20Azevedo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003308-010%2C%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">📍 Como chegar</a>
+  </div>
 </div></div>
 
 <section id="servicos"><div class="wrap">
-  <h2>O que oferecemos</h2>
-  <p class="lead">Salão / Barbearia / Estética em Tatuapé, São Paulo com qualidade e atenção a cada detalhe.</p>
+  <span class="eyebrow">O que oferecemos</span>
+  <h2>Salão com qualidade em Tatuapé</h2>
+  <p class="lead">Atendimento de confiança e cuidado em cada detalhe.</p>
   <div class="grid">
     <div class="card"><h3>Cabelo</h3><p>Cortes, coloração e tratamentos com profissionais experientes.</p></div><div class="card"><h3>Estética</h3><p>Cuidados para pele, unhas e bem-estar.</p></div><div class="card"><h3>Agendamento fácil</h3><p>Marque seu horário pelo WhatsApp em segundos.</p></div>
   </div>
 </div></section>
 
-<section id="sobre" class="about"><div class="wrap grid">
-  <div><h2>Sobre o Verus Barbearia</h2><p>O Verus Barbearia nasceu para oferecer o melhor para quem vive e trabalha em Tatuapé, São Paulo. Somos referência em salão / barbearia / estética e cuidamos de cada cliente como se fosse único. Qualidade, preço justo e atendimento próximo são o nosso compromisso todos os dias.</p></div>
-  <div style="text-align:center"><div class="stat">99+</div><p>clientes avaliaram no Google</p>
-    <div class="stat">4.9★</div><p>nota média</p></div>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="gallery"><img src="img/2.jpg" alt="Foto de Verus Barbearia" loading="lazy"></div>
+</div></section>
+
+
+
+<section id="avaliacoes" class="reviews"><div class="wrap">
+  <span class="eyebrow" style="color:var(--a)">Quem conhece, recomenda</span>
+  <h2>O que nossos clientes dizem</h2>
+  <div class="score">
+    <b>4.9</b>
+    <div><div class="stars" style="font-size:22px">★★★★★</div>
+      <div style="color:#94a3b8">99 avaliações no Google</div></div>
+    <a class="btn alt" href="https://www.google.com/maps/place/Verus+Barbearia/data=!4m7!3m6!1s0x94ce5f8ecc5d5fff:0x3b54723a58359902!8m2!3d-23.5414287!4d-46.5726461!16s%2Fg%2F11ykxgxkxh!19sChIJ_19dzI5fzpQRApk1WDpyVDs" target="_blank" rel="noopener" style="margin-left:auto">Ver todas no Google</a>
+  </div>
+  <div class="grid">
+    <div class="rcard">
+      <div class="stars">★★★★★</div>
+      <p>“Excelente experiência. Profissional com muita técnica e domínio em cabelo afro. Dessa vez também fiz tranças e simplesmente amei o resultado. Fiquei muito satisfeito! Além da qualidade do trabalho, o atendimento é nota 10: equipe educada, atenciosa e extremamente qualificada. Recomendo sem dúvidas.”</p>
+      <div class="who"><b style="color:#fff">Felipe B.</b><span>Editado 4 meses atrás</span></div>
+    </div><div class="rcard">
+      <div class="stars">★★★★★</div>
+      <p>“Atendimento excelente, ambiente aconchegante e funcionários muito receptivos. Primeira experiência no lugar e já foi muito melhor do que eu poderia imaginar, zero reclamações.”</p>
+      <div class="who"><b style="color:#fff">Yuri G.</b><span>Editado 7 meses atrás</span></div>
+    </div><div class="rcard">
+      <div class="stars">★★★★★</div>
+      <p>“Gosto muito dessa barbearia. Duda e Pedro mandam muito bem, sempre fui super bem atendido e dá pra ver o cuidado em cada detalhe. O ambiente é agradável e confortável. Indico muito!”</p>
+      <div class="who"><b style="color:#fff">Dante R.</b><span>8 meses atrás</span></div>
+    </div><div class="rcard">
+      <div class="stars">★★★★★</div>
+      <p>“Melhor barbearia do universo, só barbeiro qualificados e gente boa demais, parabéns pela equipe e pelo trabalho”</p>
+      <div class="who"><b style="color:#fff">Discipulo B.</b><span>7 meses atrás</span></div>
+    </div>
+  </div>
+</div></section>
+
+
+<section id="sobre" class="about"><div class="wrap two">
+  <div>
+    <span class="eyebrow">Sobre nós</span>
+    <h2>Verus Barbearia</h2>
+    <p>O Verus Barbearia nasceu para oferecer o melhor para quem vive e trabalha em Tatuapé, São Paulo. Somos referência em salão / barbearia / estética e cuidamos de cada cliente como se fosse único. Qualidade, preço justo e atendimento próximo são o nosso compromisso todos os dias.</p>
+    
+  </div>
+  <img src="img/2.jpg" alt="Verus Barbearia" loading="lazy">
 </div></section>
 
 <section class="faq"><div class="wrap">
+  <span class="eyebrow">Dúvidas</span>
   <h2>Perguntas frequentes</h2>
   <details><summary>Onde vocês ficam?</summary><p>Estamos em R. Platina, 266 - Vila Azevedo, São Paulo - SP, 03308-010. Veja o mapa abaixo.</p></details><details><summary>Como faço para falar com vocês?</summary><p>Clique no botão do WhatsApp e responderemos rapidinho.</p></details><details><summary>Qual o horário de atendimento?</summary><p>Consulte nossos horários pelo WhatsApp.</p></details>
 </div></section>
 
-<section id="contato" class="map"><div class="wrap grid">
+<section id="contato" class="contact"><div class="wrap two">
   <div>
+    <span class="eyebrow">Contato</span>
     <h2>Venha nos visitar</h2>
-    <p>📍 R. Platina, 266 - Vila Azevedo, São Paulo - SP, 03308-010, Tatuapé, São Paulo</p>
-    <p>📞 <a href="tel:(11) 98425-3611">(11) 98425-3611</a></p>
+    <div class="line">📍 <span>R. Platina, 266 - Vila Azevedo, São Paulo - SP, 03308-010</span></div>
+    <div class="line">📞 <a href="tel:(11) 98425-3611">(11) 98425-3611</a></div>
     
-    <p style="margin-top:20px"><a class="btn" href="https://wa.me/5511984253611?text=Ol%C3%A1%2C%20Verus%20Barbearia%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Chamar no WhatsApp</a></p>
+    
+    <div class="btns" style="margin-top:22px">
+      <a class="btn wa" href="https://wa.me/5511984253611?text=Ol%C3%A1%2C%20Verus%20Barbearia%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">💬 Chamar no WhatsApp</a>
+      <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=Verus%20Barbearia%2C%20R.%20Platina%2C%20266%20-%20Vila%20Azevedo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003308-010%2C%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">📍 Traçar rota</a>
+    </div>
   </div>
   <iframe loading="lazy" src="https://www.google.com/maps?q=Verus%20Barbearia%2C%20R.%20Platina%2C%20266%20-%20Vila%20Azevedo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003308-010%2C%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo&amp;output=embed" title="Mapa"></iframe>
 </div></section>
@@ -103,12 +191,54 @@
   <h2>Agendar horário</h2>
   <p>Atendimento rápido e sem complicação.</p>
   <a class="btn alt" href="https://wa.me/5511984253611?text=Ol%C3%A1%2C%20Verus%20Barbearia%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">💬 Falar agora</a>
+  
 </div></section>
 
-<footer><div class="wrap">© Verus Barbearia · Todos os direitos reservados.</div></footer>
+<!--DEMO-->
+<section id="seus-dados" class="owner"><div class="wrap">
+  <span class="eyebrow" style="color:#b45309">É o dono do Verus Barbearia?</span>
+  <h2>Complete os dados do seu site em 1 minuto</h2>
+  <p class="lead">Preencha o que quiser: atualizamos o site com o seu WhatsApp, Instagram, horários e serviços e te mandamos o link pronto. É grátis e sem compromisso.</p>
+  <form id="ownerForm">
+    <input type="hidden" name="lead_id" value="32"><input type="hidden" name="slug" value="verus-barbearia-tatuape">
+    <label>Seu nome<input name="nome" required maxlength="80"></label>
+    <label>WhatsApp do negócio<input name="whatsapp" required placeholder="(11) 9 9999-9999" maxlength="20"></label>
+    <label>Instagram<input name="instagram" placeholder="@seunegocio" maxlength="80"></label>
+    <label>E-mail<input name="email" type="email" maxlength="120"></label>
+    <label class="full">Horário de funcionamento<textarea name="horario" rows="3" maxlength="400" placeholder="Seg a Sex 9h às 19h · Sáb 9h às 14h"></textarea></label>
+    <label class="full">Serviços e preços (um por linha)<textarea name="servicos" rows="4" maxlength="1200" placeholder="Corte masculino - R$ 40&#10;Barba - R$ 30"></textarea></label>
+    <label class="full">Algo sobre o negócio que os clientes precisam saber<textarea name="sobre" rows="3" maxlength="800"></textarea></label>
+    <div class="full"><button class="btn" type="submit">✅ Enviar e atualizar meu site</button> <span id="ownerMsg" style="margin-left:12px"></span></div>
+  </form>
+</div></section>
+<script>
+document.getElementById("ownerForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var msg = document.getElementById("ownerMsg"), btn = this.querySelector("button");
+  btn.disabled = true; msg.textContent = "Enviando…";
+  fetch("https://campanhaluciano.app.n8n.cloud/webhook/leadforge-dados", { method: "POST", mode: "no-cors", body: new URLSearchParams(new FormData(this)) })
+    .then(function () { msg.textContent = "✅ Recebido! Seu site atualizado chega no seu WhatsApp em breve."; })
+    .catch(function () { msg.textContent = "Não foi possível enviar. Fale com a gente pelo WhatsApp."; btn.disabled = false; });
+});
+</script>
+<!--/DEMO-->
+
+<footer><div class="wrap">© Verus Barbearia · Todos os direitos reservados. · R. Platina, 266 - Vila Azevedo, São Paulo - SP, 03308-010</div></footer>
 
 <a class="wa-float" href="https://wa.me/5511984253611?text=Ol%C3%A1%2C%20Verus%20Barbearia%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
 </a>
+
+<nav class="bar">
+  <a class="wa" href="https://wa.me/5511984253611?text=Ol%C3%A1%2C%20Verus%20Barbearia%21%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><span>💬</span>WhatsApp</a>
+  <a href="tel:(11) 98425-3611"><span>📞</span>Ligar</a>
+  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Verus%20Barbearia%2C%20R.%20Platina%2C%20266%20-%20Vila%20Azevedo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003308-010%2C%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener"><span>📍</span>Como chegar</a>
+</nav>
+
+<script>
+  // destaca o dia de hoje na tabela de horários (0 = segunda)
+  var d = (new Date().getDay() + 6) % 7, row = document.querySelector('.hours tr[data-day="' + d + '"]');
+  if (row) row.className = "today";
+</script>
 </body>
 </html>

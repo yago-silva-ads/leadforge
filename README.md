@@ -4,7 +4,7 @@
 
 [![GitHub Pages](https://img.shields.io/badge/no%20ar-GitHub%20Pages-222?logo=github)](https://yago-silva-ads.github.io/leadforge/)
 [![Gerado por](https://img.shields.io/badge/gerado%20por-LeadForge%20Sites-4f7cff)](https://github.com/Matheusg0ulart/LeadMap-AI-Prospec-o)
-![Sites](https://img.shields.io/badge/sites%20publicados-17-25D366)
+![Sites](https://img.shields.io/badge/sites%20publicados-34-25D366)
 
 </div>
 
@@ -15,6 +15,7 @@ recebe aqui uma página de demonstração e uma proposta comercial:
 |---|---|
 | `/s/<negocio>/` | site de demonstração (com faixa "Quero este site") |
 | `/p/<negocio>/` | carta proposta com domínio sugerido, preço e validade |
+| `/t/<negocio>/` | convite do teste de campo gratuito do APP-CIC |
 
 - As páginas têm `noindex` e o `robots.txt` bloqueia buscadores: só abre quem recebe o link.
 - Não edite à mão: o próximo "Publicar" sobrescreve as pastas `s/` e `p/`.

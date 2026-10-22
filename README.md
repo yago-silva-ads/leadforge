@@ -1,10 +1,10 @@
 <div align="center">
 
-# 🌍 Yago Santos Digital — sites de demonstração
+# 🌍 Graham Intel — sites de demonstração
 
 [![GitHub Pages](https://img.shields.io/badge/no%20ar-GitHub%20Pages-222?logo=github)](https://yago-silva-ads.github.io/leadforge/)
 [![Gerado por](https://img.shields.io/badge/gerado%20por-LeadForge%20Sites-4f7cff)](https://github.com/Matheusg0ulart/LeadMap-AI-Prospec-o)
-![Sites](https://img.shields.io/badge/sites%20publicados-49-25D366)
+![Sites](https://img.shields.io/badge/sites%20publicados-89-25D366)
 
 </div>
 
